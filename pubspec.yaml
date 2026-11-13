@@ -1,0 +1,64 @@
+name: pennytree
+description: "PennyTree - a local-first personal finance app with multiple ledgers."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  sqflite_common_ffi: ^2.3.6
+  sqlite3_flutter_libs: ^0.5.42
+  file_picker: ^11.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+  image: ^4.12.0
+
+# Regenerate with: dart run tool/generate_icons.dart && dart run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/icon/icon.png"
+  android: true
+  adaptive_icon_background: "#2B1D12"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    background_color: "#2B1D12"
+    theme_color: "#2B1D12"
+  windows:
+    generate: true
+  macos:
+    generate: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/pennytree_logo.jpg
+
+  fonts:
+    - family: CrimsonText
+      fonts:
+        - asset: assets/fonts/CrimsonText-Regular.ttf
+        - asset: assets/fonts/CrimsonText-Italic.ttf
+          style: italic
+        - asset: assets/fonts/CrimsonText-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/CrimsonText-Bold.ttf
+          weight: 700
+    - family: CinzelDecorative
+      fonts:
+        - asset: assets/fonts/CinzelDecorative-Regular.ttf
+        - asset: assets/fonts/CinzelDecorative-Bold.ttf
+          weight: 700
